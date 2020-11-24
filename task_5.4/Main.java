@@ -30,7 +30,7 @@ public class Main {
 
     public static void main(String[] args) {
          Scanner scanner = new Scanner(System.in);
-        System.out.println("Введите путь к файлу с целыми числами, расположенными в строку через пробел: \n");
+        System.out.println("Введите путь к файлу:\n");
          String path = scanner.nextLine();
         try {
             FileReader reader = new FileReader(path);
@@ -42,7 +42,7 @@ public class Main {
 
                 strNums += (char) c;
             }
-            String[] arrayStrNums = strNums.split(" ");
+            String[] arrayStrNums = strNums.split("\r\n");
             
             int[] nums = new int[arrayStrNums.length];
 
