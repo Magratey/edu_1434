@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="399.0" prefWidth="516.0" style="-fx-background-color: #9bff80;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <HBox prefHeight="50.0" prefWidth="200.0">
+         <children>
+            <Button fx:id="buttonConnect" lineSpacing="590.0" mnemonicParsing="false" onAction="#connect" style="-fx-background-color: #cbe9bf; -fx-font-weight: 14;" text="Подключиться">
+               <font>
+                  <Font name="Basier Circle Regular" size="14.0" />
+               </font>
+               <textFill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.0784313753247261" green="0.0784313753247261" blue="0.0784313753247261" opacity="0.0" />
+                           </color>
+                        </Stop>
+                        <Stop offset="0.007662835249042145">
+                           <color>
+                              <Color red="0.0784313753247261" green="0.0784313753247261" blue="0.0784313753247261" opacity="0.0" />
+                           </color>
+                        </Stop>
+                        <Stop offset="0.007662835249042145">
+                           <color>
+                              <Color red="0.07894736528396606" green="0.0767543837428093" blue="0.0767543837428093" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="0.07894736528396606" green="0.0767543837428093" blue="0.0767543837428093" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+               <effect>
+                  <DropShadow height="7.66" offsetX="2.0" offsetY="2.0" radius="2.9575" width="6.17" />
+               </effect>
+               <HBox.margin>
+                  <Insets left="380.0" right="16.0" top="10.0" />
+               </HBox.margin></Button>
+         </children>
+      </HBox>
+      <TextArea fx:id="textArea" editable="false" prefHeight="200.0" prefWidth="200.0" style="-fx-background-image: #c1ffab;">
+         <effect>
+            <InnerShadow choke="0.1" height="204.72" radius="114.43" width="255.0">
+               <color>
+                  <Color red="0.7568627595901489" green="1.0" blue="0.6705882549285889" />
+               </color>
+            </InnerShadow>
+         </effect>
+         <VBox.margin>
+            <Insets bottom="16.0" left="16.0" right="16.0" />
+         </VBox.margin></TextArea>
+      <HBox prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <TextField fx:id="textField" onAction="#send" prefHeight="48.0" prefWidth="378.0"
+                       style="-fx-background-color: #e1ffd5; -fx-background-insets: #ffa600;">
+               <effect>
+                  <InnerShadow blurType="TWO_PASS_BOX" choke="0.44" height="19.77" radius="8.925" width="17.93">
+                     <color>
+                        <Color red="0.20503833889961243" green="0.4300000071525574" blue="0.1160999983549118" opacity="0.47826087474823" />
+                     </color>
+                  </InnerShadow>
+               </effect>
+               <HBox.margin>
+                  <Insets bottom="16.0" left="16.0" right="14.0" top="16.0" />
+               </HBox.margin></TextField>
+            <Button fx:id="buttonSend" lineSpacing="590.0" mnemonicParsing="false" onAction="#send" style="-fx-background-color: #cbe9bf; -fx-font-weight: 14;" text="Отправить">
+               <font>
+                  <Font name="Basier Circle Regular" size="14.0" />
+               </font>
+               <textFill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.0784313753247261" green="0.0784313753247261" blue="0.0784313753247261" opacity="0.0" />
+                           </color>
+                        </Stop>
+                        <Stop offset="0.007662835249042145">
+                           <color>
+                              <Color red="0.0784313753247261" green="0.0784313753247261" blue="0.0784313753247261" opacity="0.0" />
+                           </color>
+                        </Stop>
+                        <Stop offset="0.007662835249042145">
+                           <color>
+                              <Color red="0.07894736528396606" green="0.0767543837428093" blue="0.0767543837428093" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="0.07894736528396606" green="0.0767543837428093" blue="0.0767543837428093" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+               <effect>
+                  <DropShadow height="7.66" offsetX="2.0" offsetY="2.0" radius="2.9575" width="6.17" />
+               </effect>
+               <HBox.margin>
+                  <Insets right="12.0" top="24.0" />
+               </HBox.margin></Button>
+           
+         </children>
+      </HBox>
+   </children>
+</VBox>
